@@ -22,8 +22,8 @@ function geoCodeMe() {
       var service = new google.maps.places.PlacesService(map);
       service.nearbySearch({
         location: pyrmont,
-        radius: 3500,
-        type: ['restaurant']
+        radius: 5500,
+        type: ['movie_theater']
       }, callback);
     } else {
       alert("Geocode was not successful for the following reason: " + status);
@@ -60,11 +60,13 @@ function initMap() {
 }
 
 $("#submitModal").on("click", function() {
-  $("#movieGen").html("<center><button>Click this to spin</button></center>");
+  $("#movieGen").html("<center>Click for a New Movie</center>");
 
   name = $("#userName").val();
   zipCode = $("#zipCode").val();
   
   initMap();
+  $(".pageHeader").show();
   $(".map_container").show();
+  $(".titleButton").hide();
 })

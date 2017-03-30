@@ -3,12 +3,12 @@
 // $("#zipCode");
 
   // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBUsbYYv9_nqfVRx1XusZ-W1RTSTDRqAhg",
-    authDomain: "projekt-1-f3617.firebaseapp.com",
-    databaseURL: "https://projekt-1-f3617.firebaseio.com",
-    storageBucket: "projekt-1-f3617.appspot.com",
-    messagingSenderId: "303213824340"
-  };
 
+  var config = {
+    apiKey: "AIzaSyBERKpurOs49nxypgdPeTLKr75YoBH-Okw",
+    authDomain: "project1-6edd8.firebaseapp.com",
+    databaseURL: "https://project1-6edd8.firebaseio.com",
+    storageBucket: "project1-6edd8.appspot.com",
+    messagingSenderId: "362582063973"
+  };
   firebase.initializeApp(config);
