@@ -22,7 +22,7 @@ function geoCodeMe() {
       var service = new google.maps.places.PlacesService(map);
       service.nearbySearch({
         location: pyrmont,
-        radius: 5500,
+        radius: 15000,
         type: ['movie_theater']
       }, callback);
     } else {
