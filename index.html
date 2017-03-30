@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Google Font families -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Orbitron|Chango|Aldrich|Bangers" rel="stylesheet">
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- CSS file -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>DinnerMovieDessert</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="col-md-12 titleButton" data-toggle="modal" data-target="#myModal">
+            <h1>Dinner Movie Dessert</h1>
+            -Click Me to get started-</button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">I need to know some information from you friend</h4>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="userName" class="form-control" id="userName" placeholder="Kanye West" />
+                            </div>
+                            <div class="form-group">
+                                <label>Zip Code</label>
+                                <input type="zipCode" class="form-control" id="zipCode" placeholder="90210" />
+                            </div>
+                        </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info" id="submitModal" data-dismiss="modal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <h2 class="primaryColor">Spin the wheel and chill...</h2> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" id="dinner">
+                   
+                </div>
+                <div class="col-md-6 movie" id="movie">
+                    <div>
+                        <h1 class="movieSearch">Movie Search</h1>
+
+                        <div id="movieGen" class="movieButton"></div>
+
+                        <div id="movies-view"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>What to wear?</h3>
+                <h4><a href="">Weather API</a></h4>
+            </div>
+        </div>
+        
+    </div>
+    <div class="map_container">
+         <div id="map" class="map"></div>
+    </div>    
+        <!-- <h4><a href="">Email me</a></h4> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOvLvUWU-_rQ1MpLYVQCcZ1byL-Prp1po&libraries=places&callback=initMap" async defer></script>
+<script src="assets/js/dmd.js"></script>
+<script src="assets/js/dinnerLogic.js"></script>
+<script src="assets/js/movie.js"></script>
+</body>
+
+</html>

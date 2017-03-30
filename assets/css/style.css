@@ -1,0 +1,54 @@
+body {
+    background-image: url("../media/dmdBG003.jpg");
+}
+
+html, body, #map-canvas {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.movie {
+	background-color: skyblue;
+	text-align: center;
+	font-family: Bangers;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 12px;
+}
+
+.movieButton {
+	background-color: skyblue;
+	border-radius: 25px;
+	border-color: #f00000;
+	border-width: 5px;
+	color: #f00000;
+}
+
+.titleButton {
+	background-color: #f0f0f0;
+	border-radius: 25px;
+	border-color: goldenrod;
+	font-family: Aldrich;
+	font-weight: 800;
+	border-width: 5px;
+	color: #f00000;
+	font-size: 20px;
+	padding: 20px;
+	margin: 20px;
+}
+
+.map_container {
+	height:50%; 
+	width:40%;
+	display: none;
+}
+
+#map {
+	height: 80%;
+	margin: 30px;
+	border: 10px;
+	border-color: #f00000;
+}
