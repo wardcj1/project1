@@ -60,3 +60,7 @@ html, body, #map-canvas {
 	border: 10px;
 	border-color: #f00000;
 }
+
+.dessert {
+	font-family: Pattaya;
+}
