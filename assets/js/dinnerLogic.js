@@ -50,7 +50,24 @@ function createMarker(place) {
   google.maps.event.addListener(marker, 'click', function() {
     infowindow.setContent(place.name);
     infowindow.open(map, this);
+    console.log('You clicked on place:' + placeId);
   });
+/*
+  ClickEventHandler.prototype.handleClick = function(event) {
+    console.log('You clicked on: ' + event.latLng);
+    // If the event has a placeId, use it.
+    if (event.placeId) {
+      console.log('You clicked on place:' + event.placeId);
+
+      // Calling e.stop() on the event prevents the default info window from
+      // showing.
+      // If you call stop here when there is no placeId you will prevent some
+      // other map click event handlers from receiving the event.
+      event.stop();
+      this.getPlaceInformation(event.placeId);
+    }
+  };
+*/ 
 }
 
 function initMap() {
@@ -70,3 +87,14 @@ $("#submitModal").on("click", function() {
   $(".map_container").show();
   $(".titleButton").hide();
 })
+
+  // var icons = ["../media/icon001.jpg", "../media/icon002.jpg", "../media/icon003.jpg", "../media/icon004.jpg", "../media/icon005.jpg", "../media/icon006.jpg", "../media/icon007.jpg"];
+  // var socialValue = ["https://www.facebook.com", "https://plus.google.com", "https://www.linkedin.com", "https://www.instagram.com", "https://www.pinterest.com", "https://www.youtube.com", "https://www.twitter.com"];
+
+  // for (var i = 0; i < icons.length; i++) {
+  //   var imageIcons = $("<img>");
+  //   imageIcons.addClass("social-image");
+  //   imageIcons.attr("src", icons[i]);
+  //   // imageIcons.attr("src", socialValue[i]);
+  //   $("#socialMedia").append(imageIcons);
+  // }

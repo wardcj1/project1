@@ -1,12 +1,12 @@
 
       var count = 0;
       // array of movies
-      var movies = ["Moonlight", "La La Land", "Arrival", "Fences", "Hacksaw Ridge", "Hell or High Water", "Hidden Figures", "Lion", "Manchester by the Sea", "Logan", "Kong Skull Island", "John Wick Chapter 2", "xXx Return of Xander Cage", "A Dog’s Purpose", "T2 Trainspotting", "  The Lego Batman Movie", "Rings", "Fifty Shades Darker", "Bitter Harvest", "In Dubious Battle"];
+      var movies = ["Moonlight", "Queen of the Desert", "La La Land", "Arrival", "Live by Night", "Fences", "Hacksaw Ridge", "Jackie", "Hell or High Water", "Hidden Figures", "Lion", "Fist Fight", "Manchester by the Sea", "Logan", "Kong Skull Island", "John Wick Chapter 2", "xXx Return of Xander Cage", "The Great Wall", "A Dog’s Purpose", "T2 Trainspotting", "  The Lego Batman Movie", "Rings", "Fifty Shades Darker", "Bitter Harvest", "Boss Baby", "In Dubious Battle"];
 
   
       $("#movieGen").on("click", function() {
 
-        if(count === movies.length - 1) {
+        if(count === movies.length) {
           count = 0;
         };
 

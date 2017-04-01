@@ -13,12 +13,35 @@ html, body, #map-canvas {
 	 height: 150%;
 }
 
-.navDMD {
-	font-family: Amaranth;
+.titleButton {
+	background-color: #f0f0f0;
+	border-radius: 25px;
+	border-color: goldenrod;
+	font-family: Aldrich;
+	font-weight: 800;
+	border-width: 5px;
+	color: #f00000;
+	font-size: 20px;
+	padding: 20px;
+	margin-top: 130px;
 }
 
 .container {
 	background-color: white;
+}
+
+.dinner {
+	background-color: orange;
+	text-align: center;
+	font-family: Amaranth;
+	color: green;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 12px;
+	border: 5px;
+	border-style: solid;
+	border-color: gold;
+	margin-top: 130px;
 }
 
 .movie {
@@ -46,18 +69,23 @@ html, body, #map-canvas {
 	margin-right:25%;
 }
 
-.titleButton {
-	background-color: #f0f0f0;
-	border-radius: 25px;
-	border-color: goldenrod;
-	font-family: Aldrich;
-	font-weight: 800;
-	border-width: 5px;
-	color: #f00000;
-	font-size: 20px;
-	padding: 20px;
-	margin-top: 50px;
+#movieGen:hover {
+    background-color: #352629;
+    border-color: white;
+}
 
+.dessert {
+	background-color: green;
+	text-align: center;
+	font-family: Pattaya;
+	color: gold;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 12px;
+	border: 5px;
+	border-style: solid;
+	border-color: yellow;
+	margin-top: 50px;
 }
 
 .map_container {
@@ -76,4 +104,22 @@ html, body, #map-canvas {
 
 .dessert {
 	font-family: Pattaya;
+}
+
+.footerbox {
+	background-image:linear-gradient(to bottom, silver 0%, white 100%);
+	height: 30px;
+}
+
+.social-image {
+    padding: 10px;
+}
+
+.foot {
+	background-color: white;
+	color: silver;
+	height: 300px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
