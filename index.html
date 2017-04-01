@@ -16,19 +16,21 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <!--Nav Bar -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-        <ul class="nav navbar-nav navbar-right">
-          <li><div id="dinnerHead"></div>Dinner</li>
-          <li><div id="movieHead"></div>Movie</li>
-          <li><div id="dessertHead"></div>Dessert</li>
+        <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img id=mainIcon alt="Brand" src="assets/media/mainIcon.jpg">
+      </a></div>
+          <ul class="nav navbar-nav navbar-right">
+          <li><div id="dinnerHead" class=navDMD></div>Dinner</li>
+          <li><div id="movieHead" class=navDMD></div>Movie</li>
+          <li><div id="dessertHead" class=navDMD></div>Dessert</li>
         </ul>
     </div>
-  </nav>  
-    <div class="pageHeader"> weatherApi what to wear</div>
-    <div class="map_container">
-         <div id="map" class="map"></div>
-    </div>    
+  </div>  
+    <!-- Title Button -->   
     <div class="container">
         <!-- Trigger the modal with a button -->
         <button type="button" class="col-md-12 titleButton" data-toggle="modal" data-target="#myModal">
@@ -61,8 +63,10 @@
                 </div>
             </div>
         </div>
-        <!-- <h2 class="primaryColor">Spin the wheel and chill...</h2> -->
-        <div class="container">
+    </div>
+        <!-- Modal Ends-->
+
+         <div class="container">
             <div class="row">
                 <div class="col-md-6" id="dinner">
                  sidebar-3 save button: bakery movie_theater(15000) restaurant  
@@ -78,9 +82,10 @@
                 </div>
             </div>
         </div>   
-    </div>
+        <div class="map_container">
+         <div id="map" class="map"></div>
+    </div> 
 
-        <!-- <h4><a href="">Email me</a></h4> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
