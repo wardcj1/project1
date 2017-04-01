@@ -2,11 +2,18 @@ body {
     background-image: url("../media/dmdBG003.jpg");
 }
 
-html, body, #map-canvas {
+/*html, body, #map-canvas {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
+}*/
+
+html,
+body,
+#map_canvas {
+  margin: 0;
+  height: 100%;
 }
 
 #mainIcon {
